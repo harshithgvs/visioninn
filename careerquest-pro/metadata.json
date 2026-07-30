@@ -1,0 +1,6 @@
+{
+  "name": "AutoPath AI",
+  "description": "Auto-generate ATS resumes, explore interactive course roadmaps, and take dynamic AI skill mock tests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

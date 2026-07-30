@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Hide all non-resume application elements during printing */
+  header, footer, nav, button, .no-print, [class*="lg:col-span-5"] {
+    display: none !important;
+  }
+  
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* Ensure preview container takes full width when printing */
+  .lg\:col-span-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-column: span 12 / span 12 !important;
+  }
+  
+  .print-resume-container {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
