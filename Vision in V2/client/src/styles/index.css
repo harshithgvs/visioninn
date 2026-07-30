@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #3B82F6;
+  --brand-dark: #1D4ED8;
+  --brand-tint: rgba(59, 130, 246, 0.15);
+  --bg: #070B14;
+  --card: #0F172A;
+  --border: #1E293B;
+  --text: #F8FAFC;
+  --text-mid: #94A3B8;
+  --text-low: #64748B;
+  --green: #22C55E;
+  --amber: #F59E0B;
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070B14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Utility Animations */
+.glass-effect {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.logo-glow {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 25px rgba(59, 130, 246, 0.7);
+}
+
+.highlight-glow {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(59, 130, 246, 0.9);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+.card-hover {
+  transition: var(--transition);
+}
+.card-hover:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
